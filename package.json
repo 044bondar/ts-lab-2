@@ -1,0 +1,13 @@
+{
+  "name": "library-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "lint": "eslint src/",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "prepare": "husky"
+  }
+}
